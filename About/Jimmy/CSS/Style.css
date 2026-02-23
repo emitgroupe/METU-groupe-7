@@ -10,7 +10,7 @@ html{
 
 body{
     font-family:Arial;
-    background:url(https://img.freepik.com/photos-premium/paysage-montagne-genere-par-ia_972076-161.jpg) no-repeat center center/cover;
+    background-color: beige;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -327,7 +327,7 @@ nav .right a span{
 .contacts .group form textarea
 {
     font-family:Arial;
-    border: 2px solid rgb(38, 0, 255);
+    border: 2px solid rgb(16, 2, 92);
     background-color: transparent;
     padding: 10px;
     margin-bottom: 15px;
@@ -339,7 +339,7 @@ nav .right a span{
     font-size: 16px;
     font-family: Arial;
     color: aliceblue;
-    background-color: rgb(21, 0, 255);
+    background-color: rgb(11, 1, 121);
     border: none;
     height: 50px;
     cursor: pointer;
