@@ -1,234 +1,152 @@
-.{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ body{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-image:url(../IMG/fond-ecran.jpg);no reapeat center center/cover;
 }
 
-html{
-    scroll-behavior: smooth;
+.contenu{
+    width: 100%;
 }
 
-body{
-    font-family:Arial;
-    background:url(https://i.pinimg.com/1200x/9b/52/6b/9b526b17e0b4dc572f85bcd686b49ff3.jpg) no-repeat center center/cover;
-    max-width: 1400px;
-    margin: 0 auto;
+.menu{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    color: white;
+    padding: 30px 0;
 }
 
-a {
-    color: rgb(7, 6, 7);
+.menu a{
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    height: 80px;
+.menu div{
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-border-radius:15px ;
+    -moz-border-radius:15px ;
+    -ms-border-radius: 15px;
+    -o-border-radius:15px;
 }
 
-nav .left a{
-    color: rgb(6, 6, 7);
-    font-size: 22px;
-    font-weight: 600; 
-}
-nav .right a{
-    color: black;
-    margin: 0 10px;
-}
-nav .right a:last-child {
-    color:azure;
-    background-color:black;
-    padding: 5px 15px;
-    border-radius: 5px;
-}
-nav .right a span{
-    margin-left: 5px;
+.menu div:hover{
+    background-color: red;
 }
 
-.hero{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 50px;
-    margin: 50px 0;
-    margin-bottom: 100px;
-    gap: 40px;
+.corps{
+    padding: 0 100px;
 }
 
-.hero .text h2{
-    font-size: 45px;
-    color :rgb(8, 81, 116);
+.titre{
+    text-align: center;
+    color: orangered;
+    margin: 40px 0 ;
 }
 
-.hero .text .links{
-    margin-top: 25px;
-}
-.hero .text .links a{
-    display: inline-block;
-    padding: 5px 10px;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin: 10px;
-    margin-bottom: 10px;
-    transition: 1s;
-}
-
-.hero .text .links a:hover{
-    color: aqua;
-    border: 2px solid aqua;
+.presentation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    padding: 30px 0;
+    border-bottom: 20px solid red;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
 }
 
-
-.hero .text{
-    flex: 5;
-}
-
-.hero .headshot{
-    flex: 2;
-    display: flex;
-    justify-content: right;
-}
-
-.hero .headshot img{
-    border-radius: 50%;
+.image{
+    display: grid;
+    place-items: center;
     width: 300px;
-    height: 300px;
-}
-
-@media(max-widht:600px){
-    nav{
-        padding: 0 20px;
-    }
-    nav .right a span{
-        display: none;
-    }
-    nav .right a{
-        font-size: 22px;
-    }
-    nav .right a:last-child{
-        color: black;
-        background-color: transparent;
-        padding: 0;
-    }
-
-    .hobby{
-        padding: 0 20px;
-    }
-
-    .hobby .cells .cell span{
-        font-size: 16px;
-    }
-
-    .About{
-        padding: 0 20px;
-    }
-    .contacts{
-        padding: 0 20px
-    }
-    .Situation{
-        padding: 0 20px;
-    }
-}
-
-
-@media(max-width:850px){
-    .hero .text h2{
-        font-size: 35px;
-    }
-}
-@media(max-width:740px){
-    .hero {
-        flex-direction: column-reverse;
-    }
-    .hero .headshot img{
-        width: 300px;
-    }
-    .About h2{
-        text-align: center;
-    }
-    .About .group{
-        flex-direction: column;
-    }
-
-    .Situation h2{
-        text-align: center;
-    }
-
-    .Situation .group{
-        flex-direction:column ;
-    }
-
-    .contacts .group{
-        flex-direction: column;
-    }
-
-}
-
-.About{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-
-.About h2{
-    font-size: 35px;
-    margin-bottom: 30px;
-    color :rgb(8, 81, 116);
-}
-
-.About .group{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.About .group .person{
-    text-align: center;
-    flex: 2;
-}
-
-.About .group .text{
-    flex: 8;
-}
-.About .group .person img{
-    aspect-ratio: 1/1;
-    width: 250px;
-    object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 10px;
 }
 
-.About .group .person p{
-    font-weight: 600;
+.image img{
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 15px;
 }
 
-.About .group .person p:last-child{
-    font-weight: normal;
+.propos{
+    text-align: left;
 }
 
-.hobby{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-
-.hobby h2{
-    text-align: center;
+.propos h2{
     font-size: 35px;
-    color :rgb(8, 81, 116);
+    color: blue;
 }
 
-.hobby .text{
-    text-align: center;
-    margin-bottom: 20px;
+.propos table td{
+    font-size: 20px;
+    padding: 15px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.hobby .cells{
+.propos tr td:nth-child(3){
+    padding-left: 50px;
+}
+
+.competence{
+     width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 20px solid rgb(130, 198, 238);
+}
+
+.competence .text{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.etude{
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 20px solid rgb(130, 238, 153);
+}
+
+.etude blockquote{
+    border-left: 5px solid white;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    padding-left:10px ;
+    color: black;
+}
+
+.loisir{
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 20px solid rgb(238, 236, 130);
+}
+
+.loisir .text{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.loisir .cells{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.hobby .cells .cell{
+.loisir .cells .cell{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,112 +158,37 @@ nav .right a span{
     gap: 10px;
 }
 
-.hobby .cells .cell img{
+.loisir .cells .cell img{
     width: 50px;
     height: 50px ;
     object-fit: contain;
     border-radius: 2px;
 }
 
-.hobby .cells .cell span{
-    font-size: 18px;
-}
-
-
-.Situation{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-
-.Situation h2{
-    text-align: center;
-    font-size: 35px;
-    color :rgb(8, 81, 116);
-}
-
-.Situation .text{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.Situation .cells{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.Situation .cells .cell{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    padding: 10px 20px;
-    border: 1.5px solid azure;
-    border-radius: 5px;
-    margin: 10px;
-    gap: 10px;
-}
-
-.Situation .cells .cell img{
-    width: 50px;
-    height: 50px ;
-    object-fit: contain;
-    border-radius: 2px;
-}
-
-.Situation .cells .cell span{
+.loisir .cells .cell span{
     font-size: 18px;
 }
 
 .contacts{
-    padding: 0 50px;
-    margin-bottom: 100px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 20px solid rgb(238, 130, 148);
 }
 
-.contacts h2{
-    font-size: 35px;
-    color :rgb(8, 81, 116);
+.contacts table{
+    padding: 0;
 }
 
-.contacts .group{
-    display: flex;
-    gap: 50px;
+.contacts table td{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.contacts .group .text{
-    flex: 3;
-    margin-top: 20px;
+.contacts td{
+    padding: 15px 0;
 }
 
-.contacts .group form{
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-}
-
-.contacts .group form input,
-.contacts .group form textarea
-{
-    font-family:Arial;
-    border: 2px solid aqua;
-    background-color: transparent;
-    padding: 10px;
-    margin-bottom: 15px;
-    outline: none;
-    resize: none;
-}
-
-.contacts .group form button{
-    font-size: 16px;
-    font-family: Arial;
-    color: aliceblue;
-    background-color: aqua;
-    border: none;
-    height: 50px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.contacts .group form button:hover{
-    filter: brightness(.9);
-}
+.contacts tr td:nth-child(3){
+    padding-left: 50px;       
