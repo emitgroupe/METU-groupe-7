@@ -10,14 +10,13 @@ html{
 
 body{
     font-family:Arial;
-    background: url(../IMG/3nb9h6xi0lx61.webp) no-repeat center center/cover;
+    background-image: url(../IMG/3nb9h6xi0lx61.webp);
     max-width: 1400px;
     margin: 0 auto;
-
 }
 
 a {
-    color: rgb(228, 13, 13);
+    color: rgb(7, 6, 7);
     text-decoration: none;
 }
 
@@ -30,12 +29,12 @@ nav{
 }
 
 nav .left a{
-    color: rgb(10, 10, 13);
+    color: rgb(6, 6, 7);
     font-size: 22px;
     font-weight: 600; 
 }
 nav .right a{
-    color: rgb(18, 15, 15);
+    color: black;
     margin: 0 10px;
 }
 nav .right a:last-child {
@@ -59,7 +58,7 @@ nav .right a span{
 
 .hero .text h2{
     font-size: 45px;
-    color :rgb(175, 22, 22);
+    color :RED;
 }
 
 .hero .text .links{
@@ -68,7 +67,7 @@ nav .right a span{
 .hero .text .links a{
     display: inline-block;
     padding: 5px 10px;
-    border: 2px solid rgb(207, 7, 7);
+    border: 2px solid black;
     border-radius: 5px;
     margin: 10px;
     margin-bottom: 10px;
@@ -76,25 +75,62 @@ nav .right a span{
 }
 
 .hero .text .links a:hover{
-    color: aqua;
-    border: 2px solid aqua;
+    color: rgb(17, 5, 246);
+    border: 2px solid rgb(0, 30, 255);
 }
 
 
 .hero .text{
     flex: 5;
+    text-align: center;
+    height: auto;
+    width: auto;
+    border: 5px none black;
 }
 
 .hero .headshot{
     flex: 2;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .hero .headshot img{
     border-radius: 50%;
-    width: 350px;
-    height: 300;
+    width: 300px;
+    height: 300px;
+}
+
+.hero .cadre-1{
+    border: 2px solid black;
+    border-radius: 2cap;
+    background-color: rgb(25, 25, 66);
+    box-shadow: 0px 0px 10px black;
+}
+
+.hobby .cadre-2{
+    border: 2px solid black;
+    border-radius: 2cap;
+    background-color: rgb(30, 20, 68);
+    box-shadow: 0px 0px 10px black;
+    padding: 20px 30px;
+}
+
+.About .cadre-3{
+    border: 2px solid black;
+    border-radius: 2cap;
+    background-color: rgb(26, 23, 73);
+    box-shadow: 0px 0px 10px black;
+    padding: 20px 30px;
+}
+
+.Situation .cadre-4{
+    border: 2px solid black;
+    border-radius: 2cap;
+    background-color: rgb(25, 15, 66);
+    box-shadow: 0px 0px 10px black;
+    padding: 20px 30px;
+    text-align: center;
 }
 
 @media(max-widht:600px){
@@ -148,8 +184,8 @@ nav .right a span{
     .About h2{
         text-align: center;
     }
-    .About .group{
-        flex-direction: column;
+    .About p{
+        text-align: center;
     }
 
     .Situation h2{
@@ -174,7 +210,12 @@ nav .right a span{
 .About h2{
     font-size: 35px;
     margin-bottom: 30px;
-    color :rgb(165, 12, 32);
+    color :RED;
+    text-align: center;
+}
+
+.About .person{
+    text-align: center;
 }
 
 .About .group{
@@ -215,7 +256,7 @@ nav .right a span{
 .hobby h2{
     text-align: center;
     font-size: 35px;
-    color :rgb(173, 19, 53);
+    color :red;
 }
 
 .hobby .text{
@@ -261,7 +302,7 @@ nav .right a span{
 .Situation h2{
     text-align: center;
     font-size: 35px;
-    color :rgb(150, 11, 30);
+    color :red;
 }
 
 .Situation .text{
@@ -305,7 +346,7 @@ nav .right a span{
 
 .contacts h2{
     font-size: 35px;
-    color :rgb(165, 14, 34);
+    color :red;
 }
 
 .contacts .group{
@@ -316,6 +357,7 @@ nav .right a span{
 .contacts .group .text{
     flex: 3;
     margin-top: 20px;
+    color: white;
 }
 
 .contacts .group form{
@@ -328,7 +370,7 @@ nav .right a span{
 .contacts .group form textarea
 {
     font-family:Arial;
-    border: 2px solid rgb(250, 24, 73);
+    border: 2px solid rgb(16, 2, 92);
     background-color: transparent;
     padding: 10px;
     margin-bottom: 15px;
@@ -340,7 +382,7 @@ nav .right a span{
     font-size: 16px;
     font-family: Arial;
     color: aliceblue;
-    background-color: rgb(255, 0, 64);
+    background-color: rgb(11, 1, 121);
     border: none;
     height: 50px;
     cursor: pointer;
