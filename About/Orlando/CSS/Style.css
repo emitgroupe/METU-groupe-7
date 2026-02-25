@@ -1,398 +1,140 @@
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;color:#111;background:#f7f8fb}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-nav{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;background:#ffffff;box-shadow:0 2px 8px rgba(16,24,40,0.06);position:sticky;top:0;z-index:20}
-nav .left a{font-weight:700;color:#111;text-decoration:none;font-size:1.1rem}
-nav .right{display:flex;gap:14px;align-items:center}
-nav .right a{display:flex;gap:8px;align-items:center;padding:8px 12px;border-radius:8px;color:#111;text-decoration:none;transition:background .18s,color .18s}
-nav .right a i{font-size:18px}
-nav .right a:hover{background:#f0f4ff;color:#1e40af}
-
-main{max-width:1100px;margin:28px auto;padding:0 20px}
-.hero{display:flex;gap:28px;align-items:center;padding:28px;background:linear-gradient(180deg,#fff,#fbfdff);border-radius:12px}
-.hero .text{flex:1}
-.hero h2{font-size:2rem;margin-bottom:8px}
-.hero p{color:#374151;line-height:1.6}
-.hero .links{margin-top:16px;display:flex;flex-wrap:wrap;gap:12px}
-.hero .links a{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;background:#eef2ff;border-radius:8px;color:#0f172a;text-decoration:none}
-.hero .headshot img{width:180px;height:180px;object-fit:cover;border-radius:16px;border:6px solid #fff;box-shadow:0 6px 18px rgba(16,24,40,0.08)}
-
-section{margin-top:28px}
-section h2{font-size:1.4rem;margin-bottom:12px;color:#0f172a}
-.text{background:#fff;padding:16px;border-radius:8px;color:#334155}
-
-.cells{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:12px}
-.cell{background:#fff;padding:12px;border-radius:8px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(2,6,23,0.06)}
-.cell img{width:100%;height:110px;object-fit:cover;border-radius:6px}
-.cell span{font-weight:600;color:#0f172a}
-
-/* About group */
-.group{display:flex;gap:18px;flex-wrap:wrap}
-.person img{width:140px;height:140px;object-fit:cover;border-radius:12px}
-.person p{margin-top:8px;font-weight:600}
-
-/* Form */
-form{display:flex;flex-direction:column;gap:8px;max-width:420px}
-form label{font-weight:600;color:#111}
-form input,form textarea{padding:10px;border-radius:8px;border:1px solid #e6e9ef}
-form button{background:#0f172a;color:#fff;padding:10px 12px;border-radius:8px;border:0;cursor:pointer}
-
-/* Responsive */
-@media (max-width:900px){.hero{flex-direction:column;text-align:center}.hero .headshot img{width:140px;height:140px}}
-
-/* small helpers */
-.hidden{display:none}
-
-/* Accessible focus */
-a:focus{outline:3px solid rgba(59,130,246,0.15);outline-offset:3px}
-
-/* Minor typography */
-p{
-    margin-bottom:8px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
+/* ===== FOND CHIC MODERNE ===== */
+body {
+    background: linear-gradient(135deg, #3b2206, #552a01);
+    color: #ffffff;
+    line-height: 1.6;
+    padding-bottom: 40px;
 }
 
-body{
-    font-family:Arial;
-    background:url(https://i.pinimg.com/1200x/17/c6/12/17c612eba3bd70b17ddc42fbad6d479f.jpg) no-repeat center center/cover;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-a {
-    color: rgb(7, 6, 7);
-    text-decoration: none;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    height: 80px;
-}
-
-nav .left a{
-    color: rgb(6, 6, 7);
-    font-size: 22px;
-    font-weight: 600; 
-}
-nav .right a{
-    color: black;
-    margin: 0 10px;
-}
-nav .right a:last-child {
-    color:azure;
-    background-color:black;
-    padding: 5px 15px;
-    border-radius: 5px;
-}
-nav .right a span{
-    margin-left: 5px;
-}
-
-.hero{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 50px;
-    margin: 50px 0;
-    margin-bottom: 100px;
-    gap: 40px;
-}
-
-.hero .text h2{
-    font-size: 45px;
-    color :rgb(8, 81, 116);
-}
-
-.hero .text .links{
-    margin-top: 25px;
-}
-.hero .text .links a{
-    display: inline-block;
-    padding: 5px 10px;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin: 10px;
-    margin-bottom: 10px;
-    transition: 1s;
-}
-
-.hero .text .links a:hover{
-    color: aqua;
-    border: 2px solid aqua;
-}
-
-
-.hero .text{
-    flex: 5;
-}
-
-.hero .headshot{
-    flex: 2;
-    display: flex;
-    justify-content: right;
-}
-
-.hero .headshot img{
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-}
-
-@media(max-widht:600px){
-    nav{
-        padding: 0 20px;
-    }
-    nav .right a span{
-        display: none;
-    }
-    nav .right a{
-        font-size: 22px;
-    }
-    nav .right a:last-child{
-        color: black;
-        background-color: transparent;
-        padding: 0;
-    }
-
-    .hobby{
-        padding: 0 20px;
-    }
-
-    .hobby .cells .cell span{
-        font-size: 16px;
-    }
-
-    .About{
-        padding: 0 20px;
-    }
-    .contacts{
-        padding: 0 20px
-    }
-    .Situation{
-        padding: 0 20px;
-    }
-}
-
-
-@media(max-width:850px){
-    .hero .text h2{
-        font-size: 35px;
-    }
-}
-@media(max-width:740px){
-    .hero {
-        flex-direction: column-reverse;
-    }
-    .hero .headshot img{
-        width: 300px;
-    }
-    .About h2{
-        text-align: center;
-    }
-    .About .group{
-        flex-direction: column;
-    }
-
-    .Situation h2{
-        text-align: center;
-    }
-
-    .Situation .group{
-        flex-direction:column ;
-    }
-
-    .contacts .group{
-        flex-direction: column;
-    }
-
-}
-
-.About{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-
-.About h2{
-    font-size: 35px;
-    margin-bottom: 30px;
-    color :rgb(8, 81, 116);
-}
-
-.About .group{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.About .group .person{
+/* ===== HEADER ===== */
+header {
     text-align: center;
-    flex: 2;
+    padding: 60px 20px;
 }
 
-.About .group .text{
-    flex: 8;
+header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #f15d07, #ca5d04);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.About .group .person img{
-    aspect-ratio: 1/1;
-    width: 250px;
+
+header p {
+    color: #cccccc;
+}
+
+/* ===== CARTES (EFFET GLASS) ===== */
+.profile,
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
+
+.profile:hover,
+.section:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== IMAGE ===== */
+.profile img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    margin: 20px;
+    border: 4px solid #00c6ff;
 }
 
-.About .group .person p{
+/* ===== INFO ===== */
+.info {
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* ===== TITRES ===== */
+.section h2 {
+    width: 100%;
+    margin-bottom: 20px;
     font-weight: 600;
+    color: #fa7c06;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    padding-bottom: 10px;
 }
 
-.About .group .person p:last-child{
-    font-weight: normal;
+/* ===== QUALITÉS AVEC STYLE PRO ===== */
+.qualities span {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 10px 10px 0 0;
+    background: linear-gradient(90deg, #ff5e00, #ff7b00);
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s;
 }
 
-.hobby{
-    padding: 0 50px;
-    margin-bottom: 100px;
+.qualities span:hover {
+    transform: scale(1.05);
 }
 
-.hobby h2{
+/* ===== HOBBIES ===== */
+.hobbies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.hobbies div {
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
     text-align: center;
-    font-size: 35px;
-    color :rgb(8, 81, 116);
+    border-radius: 15px;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-.hobby .text{
-    text-align: center;
-    margin-bottom: 20px;
+.hobbies div:hover {
+    background: linear-gradient(90deg, #ff6b6b, #ff4757);
+    transform: scale(1.05);
 }
 
-.hobby .cells{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+/* ===== CONTACT ===== */
+.contact p {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #dddddd;
+}
+.contact {
+    display: block;
 }
 
-.hobby .cells .cell{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    padding: 10px 20px;
-    border: 1.5px solid azure;
-    border-radius: 5px;
-    margin: 10px;
-    gap: 10px;
-}
-
-.hobby .cells .cell img{
-    width: 50px;
-    height: 50px ;
-    object-fit: contain;
-    border-radius: 2px;
-}
-
-.hobby .cells .cell span{
-    font-size: 18px;
-}
-
-
-.Situation{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-
-.Situation h2{
-    text-align: center;
-    font-size: 35px;
-    color :rgb(8, 81, 116);
-}
-
-.Situation .text{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.Situation .cells{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.Situation .cells .cell{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    padding: 10px 20px;
-    border: 1.5px solid azure;
-    border-radius: 5px;
-    margin: 10px;
-    gap: 10px;
-}
-
-.Situation .cells .cell img{
-    width: 50px;
-    height: 50px ;
-    object-fit: contain;
-    border-radius: 2px;
-}
-
-.Situation .cells .cell span{
-    font-size: 18px;
-}
-
-.contacts{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-
-.contacts h2{
-    font-size: 35px;
-    color :rgb(8, 81, 116);
-}
-
-.contacts .group{
-    display: flex;
-    gap: 50px;
-}
-
-.contacts .group .text{
-    flex: 3;
-    margin-top: 20px;
-}
-
-.contacts .group form{
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-}
-
-.contacts .group form input,
-.contacts .group form textarea
-{
-    font-family:Arial;
-    border: 2px solid aqua;
-    background-color: transparent;
-    padding: 10px;
-    margin-bottom: 15px;
-    outline: none;
-    resize: none;
-}
-
-.contacts .group form button{
-    font-size: 16px;
-    font-family: Arial;
-    color: aliceblue;
-    background-color: aqua;
-    border: 5px solid rgb(161, 161, 161);
-    height: 50px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.contacts .group form button:hover{
-    filter: brightness(.9);
-}
+.contact p {
+    display: block;
+    margin-bottom: 12px;
+}    
