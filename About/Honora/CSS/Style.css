@@ -1,376 +1,50 @@
-.{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
 body{
-    font-family:Arial;
-    background:url(https://i.pinimg.com/1200x/01/96/18/019618f8a926137df52dc8e31b4b7a2d.jpg) no-repeat center center / cover ;
-    max-width: 1400px;
-    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a {
-    color: rgb(245, 239, 245);
-    text-decoration: none;
+main{
+    box-shadow: 3Opx 0px 40px rgb(196, 196, 196),-30px 0px 40px rgb(196, 196, 196);
+    margin: auto;
+    max-width: 900px;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    height: 80px;
+header{
+    height: 160px;
+    padding-top: 10px;
+    color: white;
+    background-color: #333;
 }
 
-nav .left a{
-    color: rgb(17, 17, 17);
-    font-size: 22px;
-    font-weight: 600; 
-}
-nav .right a{
-    color: rgb(3, 3, 3);
-    margin: 0 10px;
-}
-nav .right a:last-child {
-    color:rgb(7, 7, 7);
-    background-color:black;
-    padding: 5px 15px;
-    border-radius: 5px;
-}
-nav .right a span{
-    margin-left: 5px;
-}
-
-.hero{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 50px;
-    margin: 50px 0;
-    margin-bottom: 100px;
-    gap: 40px;
-}
-
-.hero .text h2{
-    font-size: 50px;
-    color :yellow;
-}
-
-.hero .text p{
-    color: white
-}
-
-.hero .text .links{
-    margin-top: 25px;
-}
-.hero .text .links a{
-    display: inline-block;
-    padding: 5px 10px;
-    border: 2px solid rgb(245, 239, 239);
-    border-radius: 5px;
-    margin: 10px;
-    margin-bottom: 10px;
-    transition: 1s;
-}
-
-.hero .text .links span{
-    color: black;
-}
-
-.hero .text .links a:hover{
-    color: rgb(241, 241, 235);
-    border: 2px solid rgb(12, 12, 12);
-}
-
-
-.hero .text{
-    flex: 5;
-}
-
-.hero .headshot{
-    flex: 2;
-    display: flex;
-    justify-content: right;
-}
-
-.hero .headshot img{
+.photo{
+    margin-left: 7%;
     border-radius: 50%;
-    width: 300px;
-    height:300px;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
 }
 
-@media(max-widht:600px){
-    nav{
-        padding: 0 20px;
-    }
-    nav .right a span{
-        display: none;
-    }
-    nav .right a{
-        font-size: 22px;
-    }
-    nav .right a:last-child{
-        color: rgb(230, 217, 217);
-        background-color: blueviolet;
-        padding: 0;
-    }
+.des{
+    margin-left: 25%;
+    margin-top: -10%;
+}
+h3{
+    color: #7d13c3;
+    font-weight: bold;
+    letter-spacing: 1rem;
+    font-size: 20px;
+}
 
-    .hobby{
-        padding: 0 20px;
-    }
-
-    .hobby .cells .cell span{
-        font-size: 16px;
-    }
-
-    .About{
-        padding: 0 20px;
-    }
-    .contacts{
-        padding: 0 20px
-    }
-    .Situation{
-        padding: 0 20px;
-    }
+.post{
+    color: rgb(248, 32, 230);
+    font-weight: bold;
+    letter-spacing: .1rem;
 }
 
 
-@media(max-width:850px){
-    .hero .text h2{
-        font-size: 35px;
-    }
-}
-@media(max-width:740px){
-    .hero {
-        flex-direction: column-reverse;
-    }
-    .hero .headshot img{
-        width: 300px;
-    }
-    .About h2{
-        text-align: center;
-    }
-    .About .group{
-        flex-direction: column;
-    }
-
-    .Situation h2{
-        text-align: center;
-    }
-
-    .Situation .group{
-        flex-direction:column ;
-    }
-
-    .contacts .group{
-        flex-direction: column;
-    }
-
-}
-
-.About{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-
-.About h2{
-    font-size: 50px;
-    margin-bottom: 30px;
-    color :yellow;
-}
-
-.About p{
-    color: white;
-}
-
-.About .group{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.About .group .person{
-    text-align: center;
-    flex: 2;
-}
-
-.About .group .text{
-    flex: 8;
-}
-.About .group .person img{
-    aspect-ratio: 1/1;
-    width: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.About .group .person p{
-    font-weight: 600;
-}
-
-.About .group .person p:last-child{
-    font-weight: normal;
-}
-
-.hobby{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-
-.hobby h2{
-    text-align: center;
-    font-size: 50px;
-    color :yellow;
-}
-
-.About p{
-    color: white;
-}
-
-.hobby .text{
-    text-align: center;
-    margin-bottom: 20px;
-    color: white;
-}
-
-.hobby .cells{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.hobby .cells .cell{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    padding: 10px 20px;
-    border: 1.5px solid azure;
-    border-radius: 5px;
-    margin: 10px;
-    gap: 10px;
-}
-
-.hobby .cells .cell img{
-    width: 50px;
-    height: 50px ;
-    object-fit: contain;
-    border-radius: 2px;
-}
-
-.hobby .cells .cell span{
+h4{
+    margin-left: 10%;
+    color: #e615a7;
+    letter-spacing: .1rem;
     font-size: 18px;
 }
 
-
-.Situation{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-
-.Situation h2{
-    text-align: center;
-    font-size: 50px;
-    color: yellow;
-}
-
-.Situation p{
-    color: white;
-}
-
-.Situation .text{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.Situation .cells{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.Situation .cells .cell{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    padding: 10px 20px;
-    border: 1.5px solid azure;
-    border-radius: 5px;
-    margin: 10px;
-    gap: 10px;
-}
-
-.Situation .cells .cell img{
-    width: 50px;
-    height: 50px ;
-    object-fit: contain;
-    border-radius: 2px;
-}
-
-.Situation .cells .cell span{
-    font-size: 18px;
-}
-
-.contacts{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-
-.contacts h2{
-    font-size: 50px;
-    color :yellow;
-}
-
-.contacts p{
-    color: white;
-}
-
-.contacts .group{
-    display: flex;
-    gap: 50px;
-}
-
-.contacts .group .text{
-    flex: 3;
-    margin-top: 20px;
-}
-
-.contacts .group form{
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-}
-
-.contacts .group form input,
-.contacts .group form textarea
-{
-    font-family:Arial;
-    border: 2px solid rgb(255, 230, 0);
-    background-color: transparent;
-    padding: 10px;
-    margin-bottom: 15px;
-    outline: none;
-    resize: none;
-}
-
-.contacts .group form button{
-    font-size: 16px;
-    font-family: Arial;
-    color: aliceblue;
-    background-color: rgb(230, 226, 14);
-    border: none;
-    height: 50px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.contacts .group form button:hover{
-    filter: brightness(.9);
-}

@@ -10,7 +10,7 @@ html{
 
 body{
     font-family:Arial;
-    background-color: beige;
+    background-color: #D2B48C;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -82,18 +82,55 @@ nav .right a span{
 
 .hero .text{
     flex: 5;
+    text-align: center;
+    height: auto;
+    width: auto;
+    border: 5px none black;
 }
 
 .hero .headshot{
     flex: 2;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .hero .headshot img{
     border-radius: 50%;
     width: 300px;
     height: 300px;
+}
+
+.hero .cadre-1{
+    border: 2px solid black;
+    border-radius: 2cap;
+    background-color: #E6D8AD;
+    box-shadow: 0px 0px 10px black;
+}
+
+.hobby .cadre-2{
+    border: 2px solid black;
+    border-radius: 2cap;
+    background-color: #E6D8AD;
+    box-shadow: 0px 0px 10px black;
+    padding: 20px 30px;
+}
+
+.About .cadre-3{
+    border: 2px solid black;
+    border-radius: 2cap;
+    background-color: #E6D8AD;
+    box-shadow: 0px 0px 10px black;
+    padding: 20px 30px;
+}
+
+.Situation .cadre-4{
+    border: 2px solid black;
+    border-radius: 2cap;
+    background-color: #E6D8AD;
+    box-shadow: 0px 0px 10px black;
+    padding: 20px 30px;
+    text-align: center;
 }
 
 @media(max-widht:600px){
@@ -147,8 +184,8 @@ nav .right a span{
     .About h2{
         text-align: center;
     }
-    .About .group{
-        flex-direction: column;
+    .About p{
+        text-align: center;
     }
 
     .Situation h2{
@@ -174,6 +211,11 @@ nav .right a span{
     font-size: 35px;
     margin-bottom: 30px;
     color :rgb(8, 31, 116);
+    text-align: center;
+}
+
+.About .person{
+    text-align: center;
 }
 
 .About .group{
