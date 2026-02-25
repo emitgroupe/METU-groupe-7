@@ -10,7 +10,7 @@ html{
 
 body{
     font-family:Arial;
-    background:url(https://i.pinimg.com/1200x/0d/3d/e1/0d3de1221ba7eded17f2671b3006ffa9.jpg) no-repeat center center/cover;
+    background:url(https://i.pinimg.com/1200x/0b/7a/70/0b7a70db965377712967b99f71be40de.jpg) no-repeat center center/cover;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -29,12 +29,12 @@ nav{
 }
 
 nav .left a{
-    color: rgb(6, 6, 7);
+    color: rgb(252, 252, 252);
     font-size: 22px;
     font-weight: 600; 
 }
 nav .right a{
-    color: black;
+    color: rgb(255, 253, 253);
     margin: 0 10px;
 }
 nav .right a:last-child {
@@ -58,11 +58,12 @@ nav .right a span{
 
 .hero .text h2{
     font-size: 45px;
-    color :rgb(8, 81, 116);
+    color :rgb(25, 34, 39);
 }
 
 .hero .text p{
-    color: white;
+    color: rgb(241, 239, 239);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .hero .text .links{
@@ -177,7 +178,7 @@ nav .right a span{
 .About h2{
     font-size: 35px;
     margin-bottom: 30px;
-    color :rgb(8, 81, 116);
+    color :rgb(21, 36, 44);
 }
 
 .About .group{
@@ -194,6 +195,7 @@ nav .right a span{
 .About .group .text{
     flex: 8;
     color: White;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .About .group .person img{
     aspect-ratio: 1/1;
@@ -219,13 +221,14 @@ nav .right a span{
 .hobby h2{
     text-align: center;
     font-size: 35px;
-    color :rgb(8, 81, 116);
+    color :rgb(22, 33, 39);
 }
 
 .hobby .text{
     text-align: center;
     margin-bottom: 20px;
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .hobby .cells{
@@ -266,13 +269,14 @@ nav .right a span{
 .Situation h2{
     text-align: center;
     font-size: 35px;
-    color :rgb(8, 81, 116);
+    color :rgb(25, 38, 44);
 }
 
 .Situation .text{
     text-align: center;
     margin-bottom: 20px;
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .Situation .cells{
@@ -311,7 +315,7 @@ nav .right a span{
 
 .contacts h2{
     font-size: 35px;
-    color :rgb(8, 81, 116);
+    color :rgb(21, 33, 37);
 }
 
 .contacts .group{
@@ -323,6 +327,7 @@ nav .right a span{
     flex: 3;
     margin-top: 20px;
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .contacts .group form{
@@ -335,7 +340,7 @@ nav .right a span{
 .contacts .group form textarea
 {
     font-family:Arial;
-    border: 2px solid aqua;
+    border: 2px solid rgb(57, 61, 61);
     background-color: transparent;
     padding: 10px;
     margin-bottom: 15px;
@@ -346,8 +351,8 @@ nav .right a span{
 .contacts .group form button{
     font-size: 16px;
     font-family: Arial;
-    color: aliceblue;
-    background-color: aqua;
+    color: rgb(42, 46, 49);
+    background-color: rgb(244, 247, 247);
     border: none;
     height: 50px;
     cursor: pointer;
