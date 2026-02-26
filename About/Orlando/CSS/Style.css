@@ -53,13 +53,20 @@ p{
 
 html{
     scroll-behavior: smooth;
+    height: 100%;
+}
+
+html, body{
+    margin: 0px auto;
+    padding: opx;
+    height: 100%;
 }
 
 body{
     font-family:Arial;
     background:url(https://i.pinimg.com/1200x/17/c6/12/17c612eba3bd70b17ddc42fbad6d479f.jpg) no-repeat center center/cover;
+    height: 2700px;
     max-width: 1400px;
-    margin: 0 auto;
 }
 
 a {
